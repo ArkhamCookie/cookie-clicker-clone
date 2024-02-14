@@ -2,7 +2,7 @@
 
 Does what it says on the tin ~~hopefully~~.
 
-## Attribute
+## Attributions
 
 ### Assets
 
