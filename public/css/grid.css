@@ -2,7 +2,6 @@
 	display: grid;
   	grid-template-columns: 1fr 1fr;
   	grid-template-rows: auto 40% auto;
-  	gap: 5px 0px;
   	grid-auto-flow: row;
   	justify-items: stretch;
   	grid-template-areas:
