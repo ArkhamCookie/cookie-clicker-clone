@@ -1,0 +1,21 @@
+.game {
+	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: auto 40% auto;
+  	gap: 5px 0px;
+  	grid-auto-flow: row;
+  	justify-items: stretch;
+  	grid-template-areas:
+    	"top-stats top-stats"
+    	"cookies-display upgrades"
+    	"bottom-stats bottom-stats";
+}
+
+.top-stats { grid-area: top-stats; }
+
+.cookies-display { grid-area: cookies-display; }
+
+.upgrades { grid-area: upgrades; }
+
+.bottom-stats { grid-area: bottom-stats; }
+
