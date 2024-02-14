@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=default-style, inital scale=1">
+
+	<title>Cookie Click Clone</title>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<header>
+		<h1>Cookie Click Clone</h1>
+	</header>
+	<div class="game">
+
+		<div class="stats top-stats">
+			<h2>
+			Cookies: <span id="currentCookies">0</span>
+			|
+			CPS: <span id="cookiesPerSecond">0</span>
+			</h2>
+		</div>
+
+		<br>
+
+		<div class="cookies-display">
+			<button type="button" id="cookieButton">
+				<img src="assets/cookie.png" alt="cookie" width="200" height="200">
+			</button>
+		</div>
+
+		<div class="upgrades">
+			<h2>Upgrades</h2>
+		</div>
+
+		<br>
+
+
+		<div class="stats bottom-stats">
+			Total Cookies Collected: <span id="totalCookies">0</span>
+			<br>
+			<span id="tempStat">Another Stat: 0</span>
+		</div>
+
+	</div>
+
+	<script type="module" src="js/app.js"></script>
+</body>
+
+</html>
