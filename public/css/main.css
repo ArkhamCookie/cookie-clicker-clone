@@ -1,5 +1,7 @@
-body {
+html, body, .game {
 	text-align: center;
+	height: 100%;
+	margin: 0;
 }
 
 .stats {

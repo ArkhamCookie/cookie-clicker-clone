@@ -1,20 +1,44 @@
 .game {
 	display: grid;
-  	grid-template-columns: 1fr 1fr;
-  	grid-template-rows: auto 40% auto;
-  	grid-auto-flow: row;
-  	justify-items: stretch;
-  	grid-template-areas:
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 70px 50% auto;
+	gap: 1em 0px;
+	grid-template-areas:
     	"top-stats top-stats"
     	"cookies-display upgrades"
     	"bottom-stats bottom-stats";
+	justify-content: stretch;
+	justify-items: stretch;
+	align-items: stretch;
 }
 
 .top-stats { grid-area: top-stats; }
 
-.cookies-display { grid-area: cookies-display; }
+.cookies-display {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"cookie-button";
+	justify-items: center;
+	align-items: center;
+	grid-area: cookies-display;
+}
 
-.upgrades { grid-area: upgrades; }
+.cookie-button { grid-area: cookie-button; }
+
+.upgrades {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 10% 90%;
+	gap: 1px 0px;
+	grid-template-areas:
+    	"upgrades-title"
+    	"upgrades-menu";
+	grid-area: upgrades;
+}
 
 .bottom-stats { grid-area: bottom-stats; }
-
+.upgrades-title { grid-area: upgrades-title; }
+.upgrades-menu { grid-area: upgrades-menu; }
