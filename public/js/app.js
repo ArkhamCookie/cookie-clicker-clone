@@ -15,6 +15,4 @@ cookieButton.addEventListener('click', function() {
 
 	currentCookies.textContent = player.cookies
 	totalCookies.textContent = player.stats.total
-
-	console.log(`You currently have ${player.cookies} and have collected ${player.stats.total} cookies total!`)
 })
