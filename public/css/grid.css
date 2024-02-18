@@ -2,7 +2,6 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 70px 50% auto;
-	gap: 1em 0px;
 	grid-template-areas:
     	"top-stats top-stats"
     	"cookies-display upgrades"
