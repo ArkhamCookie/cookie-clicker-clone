@@ -30,3 +30,20 @@ clickerBuyButton.addEventListener('click', function() {
 		currentCookies.textContent = player.cookies
 	}
 })
+
+// Grandma Upgrade
+const grandmaBuyButton = document.getElementById('buyGrandmasButton')
+const grandmaAmountDisplay = document.querySelector('#currentGrandmas')
+let grandmaAmount = 0
+let grandmaPrice = 20
+
+grandmaBuyButton.addEventListener('click', function() {
+	if (player.cookies >= grandmaPrice) {
+		grandmaAmount++
+		grandmaPrice = Math.round(grandmaPrice * 1.1)
+		grandmaAmountDisplay.textContent = grandmaAmount
+
+		player.spend(grandmaPrice)
+		currentCookies.textContent = player.cookies
+	}
+})
