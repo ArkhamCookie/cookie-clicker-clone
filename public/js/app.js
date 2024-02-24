@@ -26,7 +26,7 @@ clickerBuyButton.addEventListener('click', function() {
 		clickerPrice++
 		clickerAmountDisplay.textContent = clickerAmount
 
-		player.spend(5)
+		player.spend(clickerPrice)
 		currentCookies.textContent = player.cookies
 	}
 })
