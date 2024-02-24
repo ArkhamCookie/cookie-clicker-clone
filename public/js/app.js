@@ -18,10 +18,12 @@ cookieButton.addEventListener('click', function() {
 const clickerBuyButton = document.getElementById('buyClickerButton')
 const clickerAmountDisplay = document.querySelector('#currentClickers')
 let clickerAmount = 0
+let clickerPrice = 5
 
 clickerBuyButton.addEventListener('click', function() {
-	if (player.cookies >= 5) {
+	if (player.cookies >= clickerPrice) {
 		clickerAmount++
+		clickerPrice++
 		clickerAmountDisplay.textContent = clickerAmount
 
 		player.spend(5)
