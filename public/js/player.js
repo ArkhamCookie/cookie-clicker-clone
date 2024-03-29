@@ -7,14 +7,14 @@ export class Player {
 		}
 	}
 
-	collect(ammount) {
-		this.cookies += ammount
-		this.stats.total += ammount
+	collect(amount) {
+		this.cookies += amount
+		this.stats.total += amount
 	}
 
-	spend(ammount) {
-		if (this.cookies >= ammount) {
-			this.cookies -= ammount
+	spend(amount) {
+		if (this.cookies >= amount) {
+			this.cookies -= amount
 			return true
 		}
 		return false
