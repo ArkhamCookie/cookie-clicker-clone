@@ -9,10 +9,7 @@ const currentCookies = document.querySelector('#currentCookies')
 const totalCookies = document.querySelector('#totalCookies')
 const totalClicked = document.querySelector('#totalClicked')
 
-function collectCookies(amount) {
-	player.collect(amount)
-
-	// Update stats
+function updateStats() {
 	currentCookies.textContent = player.cookies
 	totalCookies.textContent = player.stats.total
 	totalClicked.textContent = totalCookiesClicked
@@ -21,7 +18,8 @@ function collectCookies(amount) {
 let totalCookiesClicked = 0
 cookieButton.addEventListener('click', function() {
 	totalCookiesClicked++
-	collectCookies(1)
+	player.collect(1)
+	updateStats()
 })
 
 // Clicker Upgrade
@@ -40,6 +38,10 @@ clickerBuyButton.addEventListener('click', function() {
 		clickerAmountDisplay.textContent = clickerAmount
 	}
 })
+
+while (clickerAmount > 0) {
+
+}
 
 // Grandma Upgrade
 const grandmaBuyButton = document.getElementById('buyGrandmasButton')
