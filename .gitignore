@@ -1,4 +1,4 @@
-# Arkham's Deno .gitignore
+# Arkham's ESM .gitignore
 # https://github.com/ArkhamCookie/template-deno
 
 # secrets
@@ -14,15 +14,14 @@ pnpm-lock.yaml
 yarn.lock
 yarn/
 deno.lock
+bun.lockb
 
 # cache
-.cache
-.trash
+.cache/
 .DS_Store
 
 # output
 out/
-npm/
 
 # conifgs
 .vscode/
