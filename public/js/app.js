@@ -5,6 +5,7 @@ const player = new Player()
 // Setting up DOM elements
 const cookieButton = document.getElementById('cookieButton')
 const currentCookies = document.querySelector('#currentCookies')
+const cookiesPerSecond = document.querySelector('#cookiesPerSecond')
 
 const totalCookies = document.querySelector('#totalCookies')
 const totalClicked = document.querySelector('#totalClicked')
@@ -60,3 +61,15 @@ grandmaBuyButton.addEventListener('click', function() {
 		grandmaAmountDisplay.textContent = grandmaAmount
 	}
 })
+
+function collection() {
+	const clickerCollection = clickerAmount * 1
+	const grandmaCollection = grandmaAmount * 5
+	const collectionTotal = clickerCollection + grandmaCollection
+
+	player.collect(collectionTotal)
+	cookiesPerSecond.textContent = collectionTotal
+	updateStats()
+}
+
+setInterval(collection, 1000)
