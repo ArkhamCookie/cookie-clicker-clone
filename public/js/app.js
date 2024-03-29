@@ -5,16 +5,21 @@ const player = new Player()
 // Setting up DOM elements
 const cookieButton = document.getElementById('cookieButton')
 const currentCookies = document.querySelector('#currentCookies')
+
 const totalCookies = document.querySelector('#totalCookies')
+const totalClicked = document.querySelector('#totalClicked')
 
 function collectCookies(amount) {
 	player.collect(amount)
 
 	currentCookies.textContent = player.cookies
 	totalCookies.textContent = player.stats.total
+	totalClicked.textContent = totalCookiesClicked
 }
 
+let totalCookiesClicked = 0
 cookieButton.addEventListener('click', function() {
+	totalCookiesClicked++
 	collectCookies(1)
 })
 
