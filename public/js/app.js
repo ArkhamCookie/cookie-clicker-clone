@@ -55,7 +55,8 @@ grandmaBuyButton.addEventListener('click', function() {
 	if (player.cookies >= grandmaPrice) {
 		grandmaAmount++
 		player.spend(grandmaPrice)
-		currentCookies.textContent = player.cookies
+		totalUpgradesPurchased++
+		updateStats()
 
 		grandmaPrice = Math.round(grandmaPrice * 1.1)
 		grandmaAmountDisplay.textContent = grandmaAmount
