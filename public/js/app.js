@@ -44,10 +44,6 @@ clickerBuyButton.addEventListener('click', function() {
 	}
 })
 
-while (clickerAmount > 0) {
-
-}
-
 // Grandma Upgrade
 const grandmaBuyButton = document.getElementById('buyGrandmasButton')
 const grandmaAmountDisplay = document.querySelector('#currentGrandmas')
