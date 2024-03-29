@@ -1,6 +1,6 @@
 # Cookie Click Clone
 
-Does what it says on the tin ~~hopefully~~.
+Does what it says on the tin.
 
 ## Attributions
 
