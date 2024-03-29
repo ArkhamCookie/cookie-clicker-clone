@@ -23,11 +23,11 @@ let clickerPrice = 5
 clickerBuyButton.addEventListener('click', function() {
 	if (player.cookies >= clickerPrice) {
 		clickerAmount++
-		clickerPrice++
-		clickerAmountDisplay.textContent = clickerAmount
-
 		player.spend(clickerPrice)
 		currentCookies.textContent = player.cookies
+
+		clickerPrice++
+		clickerAmountDisplay.textContent = clickerAmount
 	}
 })
 
@@ -40,10 +40,10 @@ let grandmaPrice = 20
 grandmaBuyButton.addEventListener('click', function() {
 	if (player.cookies >= grandmaPrice) {
 		grandmaAmount++
-		grandmaPrice = Math.round(grandmaPrice * 1.1)
-		grandmaAmountDisplay.textContent = grandmaAmount
-
 		player.spend(grandmaPrice)
 		currentCookies.textContent = player.cookies
+
+		grandmaPrice = Math.round(grandmaPrice * 1.1)
+		grandmaAmountDisplay.textContent = grandmaAmount
 	}
 })
