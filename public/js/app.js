@@ -42,6 +42,8 @@ clickerBuyButton.addEventListener('click', function() {
 
 		clickerPrice++
 		clickerAmountDisplay.textContent = clickerAmount
+	} else {
+		alert("You don't have enough cookies!")
 	}
 })
 
@@ -60,6 +62,8 @@ grandmaBuyButton.addEventListener('click', function() {
 
 		grandmaPrice = Math.round(grandmaPrice * 1.1)
 		grandmaAmountDisplay.textContent = grandmaAmount
+	} else {
+		alert("You don't have enough cookies!")
 	}
 })
 
