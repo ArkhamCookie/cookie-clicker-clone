@@ -12,6 +12,7 @@ const totalClicked = document.querySelector('#totalClicked')
 function collectCookies(amount) {
 	player.collect(amount)
 
+	// Update stats
 	currentCookies.textContent = player.cookies
 	totalCookies.textContent = player.stats.total
 	totalClicked.textContent = totalCookiesClicked
