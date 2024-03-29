@@ -8,11 +8,13 @@ const currentCookies = document.querySelector('#currentCookies')
 
 const totalCookies = document.querySelector('#totalCookies')
 const totalClicked = document.querySelector('#totalClicked')
+const totalUpgrades = document.querySelector('#totalUpgrades')
 
 function updateStats() {
 	currentCookies.textContent = player.cookies
 	totalCookies.textContent = player.stats.total
 	totalClicked.textContent = totalCookiesClicked
+	totalUpgrades.textContent = totalUpgradesPurchased
 }
 
 let totalCookiesClicked = 0
@@ -21,6 +23,8 @@ cookieButton.addEventListener('click', function() {
 	player.collect(1)
 	updateStats()
 })
+
+let totalUpgradesPurchased = 0
 
 // Clicker Upgrade
 const clickerBuyButton = document.getElementById('buyClickerButton')
@@ -32,7 +36,8 @@ clickerBuyButton.addEventListener('click', function() {
 	if (player.cookies >= clickerPrice) {
 		clickerAmount++
 		player.spend(clickerPrice)
-		currentCookies.textContent = player.cookies
+		totalUpgradesPurchased++
+		updateStats()
 
 		clickerPrice++
 		clickerAmountDisplay.textContent = clickerAmount
