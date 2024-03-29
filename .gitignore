@@ -1,5 +1,5 @@
 # Arkham's ESM .gitignore
-# https://github.com/ArkhamCookie/template-deno
+# https://arkhamcookie.com
 
 # secrets
 .env*
