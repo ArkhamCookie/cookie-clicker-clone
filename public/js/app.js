@@ -7,11 +7,15 @@ const cookieButton = document.getElementById('cookieButton')
 const currentCookies = document.querySelector('#currentCookies')
 const totalCookies = document.querySelector('#totalCookies')
 
-cookieButton.addEventListener('click', function() {
-	player.collect(1)
+function collectCookies(amount) {
+	player.collect(amount)
 
 	currentCookies.textContent = player.cookies
 	totalCookies.textContent = player.stats.total
+}
+
+cookieButton.addEventListener('click', function() {
+	collectCookies(1)
 })
 
 // Clicker Upgrade
