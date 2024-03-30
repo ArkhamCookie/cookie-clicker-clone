@@ -1,8 +1,10 @@
 /* Add border */
 header,
 .cookies-display,
+.upgrades,
 .stats,
-.upgrades {
+.credits,
+footer {
 	border-style: solid;
 }
 
@@ -12,4 +14,6 @@ header { border-width: 10px 10px 5px 10px ;}
 .top-stats { border-width: 5px 10px 5px 10px; }
 .upgrades { border-width: 5px 10px 5px 5px; }
 .cookies-display { border-width: 5px 5px 5px 10px; }
-.bottom-stats { border-width: 5px 10px 10px; }
+.bottom-stats { border-width: 5px 10px 5px 10px; }
+.credits { border-width: 5px 10px 5px 10px;}
+footer { border-width: 5px 10px 10px 10px;}
