@@ -4,21 +4,21 @@ html, body, .game {
 	margin: 0;
 }
 
+.stats {
+	background-color: lightgray;
+}
+
 .cookies-display,
 .stats,
 .upgrades {
 	border-style: solid;
 }
+
 .upgrades {
 	border-width: 5px 10px 5px 5px;
 }
-
 .cookies-display {
 	border-width: 5px 5px 5px 10px;
-}
-
-.stats {
-	background-color: lightgray;
 }
 .top-stats {
 	border-width: 10px 10px 5px;
