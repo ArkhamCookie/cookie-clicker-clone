@@ -6,12 +6,25 @@ html, body, .game {
 
 .stats {
 	border-style: solid;
-	border-width: 5px 5px 2.5px;
 	background-color: lightgray;
+}
+
+.top-stats {
+	border-width: 10px 10px 5px;
+}
+
+.bottom-stats {
+	border-width: 5px 10px 10px;
 }
 
 .cookies-display,
 .upgrades {
 	border-style: solid;
-	border-width: 5px;
+}
+.upgrades {
+	border-width: 5px 10px 5px 5px;
+}
+
+.cookies-display {
+	border-width: 5px 5px 5px 10px;
 }
