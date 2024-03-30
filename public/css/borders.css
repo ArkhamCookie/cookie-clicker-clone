@@ -1,12 +1,15 @@
 /* Add border */
+header,
 .cookies-display,
 .stats,
 .upgrades {
 	border-style: solid;
 }
 
+/* top | right | bottom | left */
 /* Border widths */
+header { border-width: 10px 10px 5px 10px ;}
+.top-stats { border-width: 5px 10px 5px 5px; }
 .upgrades { border-width: 5px 10px 5px 5px; }
 .cookies-display { border-width: 5px 5px 5px 10px; }
-.top-stats { border-width: 10px 10px 5px; }
 .bottom-stats { border-width: 5px 10px 10px; }
