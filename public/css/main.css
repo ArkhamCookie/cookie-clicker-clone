@@ -7,3 +7,11 @@ html, body, .game {
 .stats {
 	background-color: lightgray;
 }
+
+.top-stats h2 {
+	margin-top: 11px;
+}
+
+.bottom-stats {
+	padding: 1em;
+}
