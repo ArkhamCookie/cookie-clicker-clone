@@ -1,7 +1,7 @@
 .game {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 4% auto 20% 5%;
+	grid-template-rows: 4% 71% 20% 5%;
 	grid-template-areas:
     	"top-stats top-stats"
     	"cookies-display upgrades"
@@ -41,3 +41,4 @@
 .upgrades-title { grid-area: upgrades-title; }
 .upgrades-menu { grid-area: upgrades-menu; }
 .bottom-stats { grid-area: bottom-stats; }
+.credits { grid-area: credits; }
