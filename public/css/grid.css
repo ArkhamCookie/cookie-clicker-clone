@@ -1,7 +1,7 @@
 .game {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 4% 71% 20% 5%;
+	grid-template-rows: 4% 76% 10% 10%;
 	grid-template-areas:
     	"top-stats top-stats"
     	"cookies-display upgrades"
