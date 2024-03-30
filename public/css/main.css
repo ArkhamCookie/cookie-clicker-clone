@@ -7,22 +7,3 @@ html, body, .game {
 .stats {
 	background-color: lightgray;
 }
-
-.cookies-display,
-.stats,
-.upgrades {
-	border-style: solid;
-}
-
-.upgrades {
-	border-width: 5px 10px 5px 5px;
-}
-.cookies-display {
-	border-width: 5px 5px 5px 10px;
-}
-.top-stats {
-	border-width: 10px 10px 5px;
-}
-.bottom-stats {
-	border-width: 5px 10px 10px;
-}

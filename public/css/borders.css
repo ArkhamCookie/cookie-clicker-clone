@@ -1,0 +1,12 @@
+/* Add border */
+.cookies-display,
+.stats,
+.upgrades {
+	border-style: solid;
+}
+
+/* Border widths */
+.upgrades { border-width: 5px 10px 5px 5px; }
+.cookies-display { border-width: 5px 5px 5px 10px; }
+.top-stats { border-width: 10px 10px 5px; }
+.bottom-stats { border-width: 5px 10px 10px; }
