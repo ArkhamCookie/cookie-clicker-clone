@@ -15,3 +15,16 @@ html, body, .game {
 .bottom-stats {
 	padding: 1em;
 }
+
+.credits h2 {
+	text-decoration-line: underline;
+	text-underline-offset: 4px;
+
+	font-size: large;
+}
+.credits ul {
+	font-size: small;
+
+	list-style-type: none;
+	padding: 5px;
+}

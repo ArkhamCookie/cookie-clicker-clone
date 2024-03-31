@@ -41,4 +41,16 @@
 .upgrades-title { grid-area: upgrades-title; }
 .upgrades-menu { grid-area: upgrades-menu; }
 .bottom-stats { grid-area: bottom-stats; }
-.credits { grid-area: credits; }
+
+.credits {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 15% 1fr;
+	grid-template-areas:
+		"credits-title"
+		"credits-items";
+	grid-area: credits;
+}
+
+.credits-title { grid-area: credits-title; }
+.credits-items { grid-area: credits-items; }
